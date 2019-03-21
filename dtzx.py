@@ -62,7 +62,6 @@ driver.find_element(By.ID, 'validateCode').click()
 driver.execute_script("alert('请手工输入验证码')")
 sleep(10)# 手工输入验证码的时间
 driver.find_element(By.CSS_SELECTOR, 'a.js-submit.tianze-loginbtn').click()
-sleep(5) # 历史播放列表加载完毕
 #获取duration，格式11'
 # duration = driver.find_element(By.XPATH,'//*[@id="personal_list_html"]/li[1]/span[3]').text
 # duration_minutes = int(duration[:len(duration)-1])
